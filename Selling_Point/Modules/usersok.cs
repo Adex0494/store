@@ -66,5 +66,10 @@ namespace Selling_Point
         {
 
         }
+
+        private void iconPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
