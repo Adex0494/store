@@ -67,27 +67,10 @@ namespace Selling_Point
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSaveChanges = new System.Windows.Forms.Button();
             this.iconPanel = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -97,7 +80,24 @@ namespace Selling_Point
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.lblIconAd = new System.Windows.Forms.Label();
+            this.icon = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.tbRole = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbUser = new System.Windows.Forms.TextBox();
+            this.tbFullName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblIconNumber = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -106,9 +106,8 @@ namespace Selling_Point
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.menuStrip2.SuspendLayout();
             this.iconPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -118,7 +117,7 @@ namespace Selling_Point
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -413,102 +412,226 @@ namespace Selling_Point
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.iconPanel);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.menuStrip2);
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.lblIconAd);
+            this.panel5.Controls.Add(this.icon);
+            this.panel5.Controls.Add(this.btnBack);
+            this.panel5.Controls.Add(this.tbRole);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tbEmail);
+            this.panel5.Controls.Add(this.tbPassword);
+            this.panel5.Controls.Add(this.tbUser);
+            this.panel5.Controls.Add(this.tbFullName);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.btnSave);
+            this.panel5.Controls.Add(this.btnSaveChanges);
+            this.panel5.Controls.Add(this.lblIconNumber);
             this.panel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.panel5.Location = new System.Drawing.Point(57, 23);
+            this.panel5.Location = new System.Drawing.Point(57, 24);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(775, 499);
+            this.panel5.Size = new System.Drawing.Size(709, 498);
             this.panel5.TabIndex = 5;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label7
+            // btnSave
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(444, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(217, 177);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Choose an icon";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(215)))), ((int)(((byte)(11)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(34, 324);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(78, 29);
+            this.btnSave.TabIndex = 12;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // pictureBox2
+            // btnSaveChanges
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(444, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(217, 177);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.btnSaveChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(215)))), ((int)(((byte)(11)))));
+            this.btnSaveChanges.FlatAppearance.BorderSize = 0;
+            this.btnSaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveChanges.Location = new System.Drawing.Point(118, 324);
+            this.btnSaveChanges.Name = "btnSaveChanges";
+            this.btnSaveChanges.Size = new System.Drawing.Size(156, 29);
+            this.btnSaveChanges.TabIndex = 11;
+            this.btnSaveChanges.Text = "Save Changes";
+            this.btnSaveChanges.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // iconPanel
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(293, 324);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 29);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
+            this.iconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconPanel.Controls.Add(this.pictureBox11);
+            this.iconPanel.Controls.Add(this.flowLayoutPanel1);
+            this.iconPanel.Location = new System.Drawing.Point(21, 255);
+            this.iconPanel.Name = "iconPanel";
+            this.iconPanel.Size = new System.Drawing.Size(689, 227);
+            this.iconPanel.TabIndex = 6;
+            this.iconPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.iconPanel_Paint);
             // 
-            // menuStrip2
+            // pictureBox11
             // 
-            this.menuStrip2.AutoSize = false;
-            this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(215)))), ((int)(((byte)(11)))));
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.menuStrip2.Location = new System.Drawing.Point(24, 324);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(201, 29);
-            this.menuStrip2.TabIndex = 2;
-            this.menuStrip2.Tag = "";
-            this.menuStrip2.Text = "Save";
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(55, 374);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(208, 169);
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
             // 
-            // toolStripMenuItem2
+            // flowLayoutPanel1
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(58, 25);
-            this.toolStripMenuItem2.Text = "Save";
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox8);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox9);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox10);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 27);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(624, 275);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // toolStripMenuItem3
+            // pictureBox3
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(125, 25);
-            this.toolStripMenuItem3.Text = "Save changes";
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // comboBox1
+            // pictureBox4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(147, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(291, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(435, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 142);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 4;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(147, 142);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(291, 142);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(435, 142);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(138, 133);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // lblIconAd
+            // 
+            this.lblIconAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblIconAd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblIconAd.ForeColor = System.Drawing.Color.White;
+            this.lblIconAd.Location = new System.Drawing.Point(466, 66);
+            this.lblIconAd.Name = "lblIconAd";
+            this.lblIconAd.Size = new System.Drawing.Size(195, 140);
+            this.lblIconAd.TabIndex = 9;
+            this.lblIconAd.Text = "Choose an icon";
+            this.lblIconAd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblIconAd.Click += new System.EventHandler(this.lblIconAd_Click);
+            // 
+            // icon
+            // 
+            this.icon.Location = new System.Drawing.Point(444, 29);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(217, 177);
+            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon.TabIndex = 10;
+            this.icon.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(293, 324);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(78, 29);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
+            // tbRole
+            // 
+            this.tbRole.FormattingEnabled = true;
+            this.tbRole.Items.AddRange(new object[] {
             "Seller (not authorized to handle money)",
             "Cashier (authorized to handle money)",
             "Administrator (all access)"});
-            this.comboBox1.Location = new System.Drawing.Point(113, 220);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(258, 29);
-            this.comboBox1.TabIndex = 7;
+            this.tbRole.Location = new System.Drawing.Point(113, 220);
+            this.tbRole.Name = "tbRole";
+            this.tbRole.Size = new System.Drawing.Size(258, 29);
+            this.tbRole.TabIndex = 7;
             // 
             // panel9
             // 
@@ -542,37 +665,37 @@ namespace Selling_Point
             this.panel6.Size = new System.Drawing.Size(179, 1);
             this.panel6.TabIndex = 6;
             // 
-            // textBox5
+            // tbEmail
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(118, 171);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 22);
-            this.textBox5.TabIndex = 5;
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Location = new System.Drawing.Point(118, 171);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(179, 22);
+            this.tbEmail.TabIndex = 5;
             // 
-            // textBox4
+            // tbPassword
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(118, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 22);
-            this.textBox4.TabIndex = 5;
+            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPassword.Location = new System.Drawing.Point(118, 118);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(179, 22);
+            this.tbPassword.TabIndex = 5;
             // 
-            // textBox3
+            // tbUser
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(118, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 22);
-            this.textBox3.TabIndex = 5;
+            this.tbUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbUser.Location = new System.Drawing.Point(118, 66);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Size = new System.Drawing.Size(179, 22);
+            this.tbUser.TabIndex = 5;
             // 
-            // textBox2
+            // tbFullName
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(118, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 22);
-            this.textBox2.TabIndex = 5;
+            this.tbFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbFullName.Location = new System.Drawing.Point(118, 19);
+            this.tbFullName.Name = "tbFullName";
+            this.tbFullName.Size = new System.Drawing.Size(179, 22);
+            this.tbFullName.TabIndex = 5;
             // 
             // label6
             // 
@@ -625,121 +748,14 @@ namespace Selling_Point
             this.label2.TabIndex = 0;
             this.label2.Text = "Full Name:";
             // 
-            // iconPanel
+            // lblIconNumber
             // 
-            this.iconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPanel.Controls.Add(this.pictureBox11);
-            this.iconPanel.Controls.Add(this.flowLayoutPanel1);
-            this.iconPanel.Location = new System.Drawing.Point(411, 379);
-            this.iconPanel.Name = "iconPanel";
-            this.iconPanel.Size = new System.Drawing.Size(299, 103);
-            this.iconPanel.TabIndex = 6;
-            this.iconPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.iconPanel_Paint);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox8);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox9);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox10);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 27);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(624, 275);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(147, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(291, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(435, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 142);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(147, 142);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(291, 142);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(435, 142);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(138, 133);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(55, 374);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(208, 169);
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
+            this.lblIconNumber.AutoSize = true;
+            this.lblIconNumber.Location = new System.Drawing.Point(482, 251);
+            this.lblIconNumber.Name = "lblIconNumber";
+            this.lblIconNumber.Size = new System.Drawing.Size(57, 21);
+            this.lblIconNumber.TabIndex = 13;
+            this.lblIconNumber.Text = "label7";
             // 
             // usersok
             // 
@@ -757,6 +773,7 @@ namespace Selling_Point
             this.Name = "usersok";
             this.Tag = "";
             this.Text = "Save";
+            this.Load += new System.EventHandler(this.usersok_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -768,10 +785,8 @@ namespace Selling_Point
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
             this.iconPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -781,7 +796,7 @@ namespace Selling_Point
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -826,25 +841,22 @@ namespace Selling_Point
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbFullName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tbRole;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tbUser;
+        private System.Windows.Forms.Label lblIconAd;
+        private System.Windows.Forms.PictureBox icon;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel iconPanel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -856,6 +868,9 @@ namespace Selling_Point
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.Label lblIconNumber;
     }
 }
 
